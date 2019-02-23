@@ -1,0 +1,47 @@
+.user-tab-content{
+    background-color: rgb(242, 242, 242);
+    padding-top: 70px;
+}
+.user-avatar {
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    overflow: hidden;
+    position: absolute;
+    top: 360px;
+}
+.user-avatar img {
+    width: 100%;
+}
+.profile-data {
+    margin-left: 170px;
+}
+.profile-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.profile-stats {
+    margin-left: 50px;
+}
+.stats-points-img {
+    background: url(../../../../../assets/download.png);
+    width: 50px;
+    height: 19px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+.stats-points-count{
+    font-size: 24px;
+}
+
+a.tab-name:hover {
+    cursor: pointer;
+    color: #7303c0;
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+a.tab-name {
+    padding: 25px 20px;
+    font-size: 14px;
+}

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UserService } from '../../services/user.service';
+import { Images } from '../../interfaces/images';
 
 @Component({
   selector: 'app-user-profile-images',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-profile-images.component.css']
 })
 export class UserProfileImagesComponent implements OnInit {
-
-  constructor() { }
-
+  @Input() id: string;
+  public images: Images;
+  constructor(
+    private userService: UserService
+  ) { }
+  /**
+   * ngOnInit - вызов метода на получение от сервера данных об изображениях
+   * заись в перменную images полученных данных
+   */
   ngOnInit() {
+    this.userService.getUserImg(this.id).subscribe((images: Images) => {
+      this.images = images;
+    });
   }
-
 }

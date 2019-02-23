@@ -5,14 +5,102 @@
 @import "~primeng/resources/themes/nova-light/theme.css";
 @import "~primeng/resources/primeng.min.css";
 
-.text-pink {
-  color: #e12ebc;
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px/1 robotoregular,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #212121;
+  -webkit-tap-highlight-color: rgba(115,3,192,.3);
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex {
+  display: flex!important;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+.flex-lg-row {
+  flex-direction: row!important;
+}
+.align-items-center {
+  align-items: center!important;
+}
+.flex-grow-1 {
+  flex-grow: 1!important;
+}
+.align-items-end {
+  align-items: flex-end!important;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
+.flex-wrap {
+  flex-wrap: wrap!important;
+}
+.text-center {
+  text-align: center;
+}
+.w-100 {
+  width: 100%!important;
+}
+.d-block {
+  display: block!important;
+}
+.d-inline-block {
+  display: inline-block!important;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.cur-pointer {
+  cursor: pointer;
+}
+.pos-absolute {
+  position: absolute;
+}
+img {
+  max-width: 100%;
+}
+.text-color-dark {
+  color: #212121;
+}
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-color-gray {
+  color: #585858;
+}
+.text-pink {
+  color: #fa7268;
+}
+.bg-pink {
+  background-color: #fa7268;
+}
 .h-100vh {
   height: 100vh;
 }
 
-.bg-pink {
-  background-color: #e12ebc;
-}

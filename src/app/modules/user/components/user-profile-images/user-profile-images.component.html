@@ -1,3 +1,33 @@
-<p>
-  user-profile-images works!
-</p>
+<div class="images-wrap">
+  <!--<div class="container mt-4">
+      <label for="userPhotos" class="upload-photos text-center">
+          <span>+ Upload photos</span>
+          <input type="file" name="userPhotos" id="userPhotos" multiple>
+      </label> 
+      <!-- /.upload-photos -->
+  <!--</div>-->
+  <div class="container">
+      <div class="row mt-5rem">
+        <div class="col-4 col" *ngFor='let img of images'>
+            <div class="img-wrap"><!--data-img-id="${_id}"-->
+                <img [src]="img.url" alt=""> 
+                <div class="on-hover d-flex flex-column justify-content-between">
+                    <div class="remove-wrap d-flex">
+                        <i class="fas fa-trash-alt ml-auto trash"></i>
+                    </div>
+                    <div class="img-info d-flex align-items-center">
+                        <span class="views-count d-flex align-items-center">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                        <span class="likes-count d-flex align-items-center ml-5">
+                            <i class="fas fa-thumbs-up"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>

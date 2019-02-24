@@ -17,6 +17,27 @@
     transform: translateY(-50%);
     transition: all .2s ease-in;
 }
+
+.upload-photo-btn:hover{
+    transform: scale(1.05) translateY(-7%);
+    box-shadow: 0 7px 20px 2px rgba(0,0,0,.25);
+}
+.upload-photo-btn{
+    padding: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.upload-photo-img{
+    background: url(../../../../../assets/camera.png);
+    width: 109px;
+    height: 105px;
+}
+.text-color-light{
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 70px;
+    color: #e6e6e6;
+}
 .on-hover {
     position: absolute;
     top: 0;

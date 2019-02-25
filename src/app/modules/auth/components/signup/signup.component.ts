@@ -74,7 +74,7 @@ export class SignupComponent implements OnInit {
         this.messageService.add({severity: 'error', summary: 'Server error', detail: data.message});
       } else {
         this.messageService.add({severity: 'success', summary: 'Server error', detail: data.message});
-        this.router.navigate([`/login`]);// почему не работает?????????
+        this.router.navigate(['/auth/login']); // почему не работает?????????
       }
     });
   }
